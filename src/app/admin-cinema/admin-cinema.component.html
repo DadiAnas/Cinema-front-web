@@ -17,7 +17,7 @@
     </div>
     <div class="col-md-9">
       <div class="panel panel-default">
-        <div class="panel-heading">Liste des Cinémas</div>
+        <div class="panel-heading">Cinemas list</div>
         <div class="panel-body">
           <ul *ngIf="cinemas" class="nav nav-pills ">
             <li [ngClass]="c==currentCinema?'active':''"  *ngFor="let c of cinemas._embedded.cinemas" class="clickable" >

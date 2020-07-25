@@ -1,13 +1,15 @@
 .clickable{
   cursor: pointer ;
 }
-
-.cinemasName{
-  border: 1px solid #ccc;
+.ticket{
   margin: 5px;
-  color:black;
+  width: 40px;
+}
+.cinemasName{
+border: 1px solid #ccc;
+  margin: 5px;
+  color:white;
 }
 .cinemasName:active{
   color:white;
 }
-

@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {CinemaComponent} from './cinema/cinema.component';
 import {AdminCinemaComponent} from './admin-cinema/admin-cinema.component';
 import {VilleComponent} from './ville/ville.component';
@@ -10,27 +10,27 @@ import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
   {
-    path: "cinema",
-    component:CinemaComponent
+    path: 'cinema',
+    component: CinemaComponent
   },
   {
-    path: "admin/cinema",
-    component:AdminCinemaComponent
+    path: 'admin/cinema',
+    component: AdminCinemaComponent
   },
   {
-    path: "admin/cinema/ville",
-    component:VilleComponent
+    path: 'admin/cinema/ville',
+    component: VilleComponent
   },
   {
-    path: "admin/cinema/cinemas",
-    component:CinemasComponent
+    path: 'admin/cinema/cinemas',
+    component: CinemasComponent
   },
   {
-    path: "admin/cinema/salles",
-    component:SalleComponent
+    path: 'admin/cinema/salles',
+    component: SalleComponent
   },
   {
-    path: "login", component: LoginComponent
+    path: 'login', component: LoginComponent
   },
   {path: '', redirectTo: 'cinema', pathMatch: 'full'}
 ];
@@ -39,4 +39,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
